@@ -166,7 +166,8 @@
                             <h3>Discover</h3>
                             <h2>About Me</h2>
                         </div>
-                        <p> Hello!, my name is Urvish, and I'm a passionate game developer with a strong interest in Game
+                        <p> Hello!, my name is Urvish, and I'm a passionate game developer with a strong interest in
+                            Game
                             Design. <!--While I may be new to the game development industry,--> I have been working hard
                             to
                             sharp my skills and have been creating games that are engaging and fun.
@@ -543,10 +544,7 @@
                             <img class="img-fluid" src="DiceracerImg/DiceRacer_Home.png" alt="">
                             <div class="overlay">
                                 <h4 class="item-title" style="font-size: 25px; font-weight: bold;">Dice Racer</h4>
-                                <!-- <a class="icon-img"><button data-target="simpleModal_1" data-toggle="modal"><i
-                                            class="fa-regular fa-magnifying-glass-plus"></i></a> -->
-                                <a class="icon-img" data-target="simpleModal_1" data-toggle="modal"
-                                    style="cursor: pointer;">Explore</a>
+                                <a href="#modal-1" class="icon-img open-modal-link" style="cursor: pointer;">Explore</a>
                                 <div class="item-category">
                                     <span>Game</span>
                                 </div>
@@ -555,13 +553,11 @@
                     </div>
                     <div class="col-lg-4 col-md-6 filtr-item" data-category="1" data-sort="value">
                         <div class="item">
-                            <!-- <img class="img-fluid" src="images/portfolio/item-2.jpg" alt=""> -->
                             <img class="img-fluid" src="NinjaWarrior/NW_Home01.png" alt="">
 
                             <div class="overlay">
                                 <h4 class="item-title" style="font-size: 20px; font-weight: bold;">Ninja Warrior</h4>
-                                <a class="icon-img" data-target="simpleModal_2" data-toggle="modal"
-                                    style="cursor: pointer;">Explore</a>
+                                    <a href="#modal-2" class="icon-img open-modal-link" style="cursor: pointer;">Explore</a>
                                 <div class="item-category">
                                     <span>Game</span>
                                 </div>
@@ -570,13 +566,12 @@
                     </div>
                     <div class="col-lg-4 col-md-6 filtr-item" data-category="1" data-sort="value">
                         <div class="item">
-                            <!-- <img class="img-fluid" src="images/portfolio/item-3.jpg" alt=""> -->
                             <img class="img-fluid" src="SlyGuy/SG_Home.jpg" alt="">
 
                             <div class="overlay">
                                 <h4 class="item-title" style="font-size: 20px; font-weight: bold;">SLY GUY</h4>
-                                <a class="icon-img" data-target="simpleModal_3" data-toggle="modal"
-                                    style="cursor: pointer;">Explore</a>
+
+                                    <a href="#modal-3" class="icon-img open-modal-link" style="cursor: pointer;">Explore</a>
                                 <div class="item-category">
                                     <span>Game</span>
                                 </div>
@@ -588,8 +583,7 @@
                             <img class="img-fluid" src="Welcare/WC01.png" alt="">
                             <div class="overlay">
                                 <h4 class="item-title" style="font-size: 20px; font-weight: bold;">WelCare</h4>
-                                <a class="icon-img" data-target="simpleModal_4" data-toggle="modal"
-                                    style="cursor: pointer;">Explore</a>
+                                <a href="#modal-4" class="icon-img open-modal-link" style="cursor: pointer;">Explore</a>
                                 <div class="item-category">
                                     <span>Front-End</span>
                                 </div>
@@ -601,10 +595,7 @@
                             <img class="img-fluid" src="PacmanAR/PacmanHome.png" alt="">
                             <div class="overlay">
                                 <h4 class="item-title" style="font-size: 20px; font-weight: bold;">Pacman-AR</h4>
-                                <a class="icon-img" data-target="simpleModal_5" data-toggle="modal"
-                                    style="cursor: pointer;">
-                                    <!-- <i class="fa-sharp fa-solid fa-magnifying-glass"></i> -->
-                                    Explore</a>
+                                <a href="#modal-5" class="icon-img open-modal-link" style="cursor: pointer;">Explore</a>
                                 <div class="item-category">
                                     <span>Game development</span>
                                 </div>
@@ -616,8 +607,7 @@
                             <img class="img-fluid" src="CharusatModel/CU01.png" alt="">
                             <div class="overlay">
                                 <h4 class="item-title" style="font-size: 20px; font-weight: bold;">Charusat Model</h4>
-                                <a class="icon-img" data-target="simpleModal_6" data-toggle="modal"
-                                    style="cursor: pointer;">Explore</a>
+                                <a href="#modal-6" class="icon-img open-modal-link" style="cursor: pointer;">Explore</a>
                                 <div class="item-category">
                                     <span>3D Model</span>
                                 </div>
@@ -629,10 +619,7 @@
                             <img class="img-fluid" src="DiceracerUI/DR_UI_Logo.png" alt="">
                             <div class="overlay">
                                 <h4 class="item-title" style="font-size: 20px; font-weight: bold;">Dice Racer UI</h4>
-                                <button class="icon-img" data-target="simpleModal_7" data-toggle="modal"
-                                style="cursor: pointer;">Explore</button>
-                                <!-- <a class="icon-img" data-target="simpleModal_7" data-toggle="modal"
-                                    style="cursor: pointer;">Explore</a> -->
+                                <a href="#modal-7" class="icon-img open-modal-link" style="cursor: pointer;">Explore</a>
                                 <div class="item-category">
                                     <span>UI/UX Design!</span>
                                 </div>
@@ -645,34 +632,12 @@
 
 
         <!--Project detail modal popup JS -->
-        <script>
-
-            document.addEventListener('click', function (e) {
-                e = e || window.event;
-                var target = e.target || e.srcElement;
-
-                if (target.hasAttribute('data-toggle') && target.getAttribute('data-toggle') == 'modal') {
-                    if (target.hasAttribute('data-target')) {
-                        var m_ID = target.getAttribute('data-target');
-                        document.getElementById(m_ID).classList.add('open');
-                        e.preventDefault();
-                    }
-                }
-
-                // Close modal window with 'data-dismiss' attribute or when the backdrop is clicked
-                if ((target.hasAttribute('data-dismiss') && target.getAttribute('data-dismiss') == 'modal') || target.classList.contains('modal')) {
-                    var modal = document.querySelector('[class="modal open"]');
-                    modal.classList.remove('open');
-                    e.preventDefault();
-                }
-            }, false);
-
-        </script>
+        
 
         <!-- Project Detail Information start -->
-        <div id="simpleModal_1" class="modal">
+        <div id="modal-1" class="modal">
             <div class="pop-container">
-                <a data-dismiss="modal" class="modal_close" style="color: white;">X</a>
+                <a  class="close" style="z-index: 1000;">X</a>
                 <div class="wrapper">
                     <div class="slide">
                         <div class="slide-img slidingimg01">
@@ -704,17 +669,19 @@
                             <li style="color: white; list-style: none;"><b>Platform : </b>Windows.</li>
                             <li style="color: white; list-style: none;"><b>Role : </b>Game Designer.</li>
                             </p>
-                            <a target="_blank" href="https://drive.google.com/file/d/1QFD5g6IUc7S5QTe1LrIUeDqUw4bZwJXP/view?usp=sharing" download>Download</a>
+                            <a target="_blank"
+                                href="https://drive.google.com/file/d/1QFD5g6IUc7S5QTe1LrIUeDqUw4bZwJXP/view?usp=sharing"
+                                download>Download</a>
                         </div>
                     </div>
 
                 </div>
             </div>
         </div>
-        <div id="simpleModal_2" class="modal">
-            <!-- <button data-dismiss="modal">Close</button> -->
+        <div id="modal-2" class="modal">
             <div class="pop-container">
-                <a data-dismiss="modal" class="modal_close" style="color: white;">X</a>
+                <a class="close" style="z-index: 1000;">X</a>
+
                 <div class="wrapper">
                     <div class="slide">
                         <div class="slide-img slidingimg02">
@@ -761,17 +728,19 @@
                             <li style="color: white; list-style: none;"><b>Platform : </b>Windows.</li>
                             <li style="color: white; list-style: none;"><b>Role : </b>Game Designer & Programmer
                                 </p>
-                                <a target="_blank" href="https://drive.google.com/file/d/1Z3f7x3BxnMr52KBEajoxpV2CRh6_3yv8/view?usp=sharing" download>Download</a>
+                                <a target="_blank"
+                                    href="https://drive.google.com/file/d/1Z3f7x3BxnMr52KBEajoxpV2CRh6_3yv8/view?usp=sharing"
+                                    download>Download</a>
                         </div>
                     </div>
 
                 </div>
             </div>
         </div>
-        <div id="simpleModal_3" class="modal">
-            <!-- <button data-dismiss="modal">Close</button> -->
+        <div id="modal-3" class="modal">
             <div class="pop-container">
-                <a data-dismiss="modal" class="modal_close" style="color: white;">X</a>
+                <a  class="close" style="z-index: 1000;">X</a>
+
                 <div class="wrapper">
                     <div class="slide">
                         <div class="slide-img slidingimg03">
@@ -804,24 +773,25 @@
                                 featuring a thief who has to escape from a bank without getting caught by security
                                 guards or cameras. Each level will have different designs and features.
                                 <br>
-                                <!-- <p style="color: rgb(207, 207, 207);">[It was the first game that I developed.]</p>
-                            </p> -->
+
                                 <li style="color: white; list-style: none;"><b>Technology : </b>Unity, C#, Figma.</li>
                                 <li style="color: white; list-style: none;"><b>Platform : </b>Android.</li>
                                 <li style="color: white; list-style: none;"><b>Role : </b>Game Designer & Programmer.
                                 </li>
                             </p>
-                            <a target="_blank" href="https://drive.google.com/file/d/11UrkbGKD9txwz98DOy06u0r3dwbaIYpF/view?usp=sharing" download>Download</a>
+                            <a target="_blank"
+                                href="https://drive.google.com/file/d/11UrkbGKD9txwz98DOy06u0r3dwbaIYpF/view?usp=sharing"
+                                download>Download</a>
                         </div>
                     </div>
 
                 </div>
             </div>
         </div>
-        <div id="simpleModal_4" class="modal">
-            <!-- <button data-dismiss="modal">Close</button> -->
+        <div id="modal-4" class="modal">
             <div class="pop-container">
-                <a data-dismiss="modal" class="modal_close" style="color: white;">X</a>
+                <a class="close" style="z-index: 1000;">X</a>
+
                 <div class="wrapper">
                     <div class="slide">
                         <div class="slide-img slidingimg04">
@@ -851,7 +821,6 @@
                                 treatments recommended by doctors and will also serve as an appointment booking portal
                                 for doctors.
                                 <br>
-                                <!-- <p style="color: rgb(207, 207, 207);">[It was the first game that I developed.]</p>-->
                             </p>
                             <li style="color: white; list-style: none;"><b>Technology : </b>HTML, CSS</li>
                             <li style="color: white; list-style: none;"><b>Role : </b>Front-End Developer
@@ -864,10 +833,10 @@
                 </div>
             </div>
         </div>
-        <div id="simpleModal_5" class="modal">
-            <!-- <button data-dismiss="modal">Close</button> -->
+        <div id="modal-5" class="modal">
             <div class="pop-container">
-                <a data-dismiss="modal" class="modal_close" style="color: white;">X</a>
+                <a class="close" style="z-index: 1000;">X</a>
+
                 <div class="wrapper">
                     <div class="slide">
                         <div class="slide-img slidingimg05">
@@ -914,17 +883,19 @@
                             <li style="color: white; list-style: none;"><b>Platform : </b>Android</li>
                             <li style="color: white; list-style: none;"><b>Role : </b>Game Designer & Programmer
                             </li>
-                            <a target="_blank" href="https://drive.google.com/file/d/1oiEhDzm7fPv4o8a3oDtuLJ0GLKo8qTjB/view?usp=sharing" download>Download</a>
+                            <a target="_blank"
+                                href="https://drive.google.com/file/d/1oiEhDzm7fPv4o8a3oDtuLJ0GLKo8qTjB/view?usp=sharing"
+                                download>Download</a>
                         </div>
                     </div>
 
                 </div>
             </div>
         </div>
-        <div id="simpleModal_6" class="modal">
-            <!-- <button data-dismiss="modal">Close</button> -->
+        <div id="modal-6" class="modal">
             <div class="pop-container">
-                <a data-dismiss="modal" class="modal_close" style="color: white;">X</a>
+                <a  class="close" style="z-index: 1000;">X</a>
+
                 <div class="wrapper">
                     <div class="slide">
                         <div class="slide-img slidingimg06">
@@ -950,18 +921,16 @@
                             <p>I utilized Blender to create a 3D model of a specific section of my college.
                             </p>
                             <li style="color: white; list-style: none;"><b>Technology : </b>Blender</li>
-
-                            <!-- <a href="#">Read More</a> -->
                         </div>
                     </div>
 
                 </div>
             </div>
         </div>
-        <div id="simpleModal_7" class="modal">
-            <!-- <button data-dismiss="modal">Close</button> -->
+        <div id="modal-7" class="modal">
             <div class="pop-container">
-                <a data-dismiss="modal" class="modal_close" style="color: white;">X</a>
+                <a  class="close" style="z-index: 1000;">X</a>
+
                 <div class="wrapper">
                     <div class="slide">
                         <div class="slide-img slidingimg07">
@@ -993,9 +962,6 @@
                                 GameJam game.
                             </p>
                             <li style="color: white; list-style: none;"><b>Technology : </b>Figma</li>
-                            <!-- <li style="color: white; list-style: none;"><b>Platform : </b>Android</li> -->
-                            <!-- <li style="color: white; list-style: none;"><b>Role : </b>Game Designer & Programmer
-                            </li> -->
                             <a target="_blank"
                                 href="https://www.figma.com/file/hXXtocoFbuKf8pfLD9QP1Y/GMTK2022-Gamejam?node-id=0%3A1&t=VrxbJnnGAMJS7E1D-1">Explore
                                 in figma</a>
@@ -1005,7 +971,36 @@
             </div>
         </div>
         <!-- Sliding JS -->
+        <script>
+            const openModalLinks = document.getElementsByClassName('open-modal-link');
+            const modals = document.getElementsByClassName('modal');
+            const closeBtns = document.getElementsByClassName('close');
 
+            for (let i = 0; i < openModalLinks.length; i++) {
+                openModalLinks[i].addEventListener('click', function (event) {
+                    event.preventDefault();
+                    const modalId = this.getAttribute('href');
+                    const modal = document.querySelector(modalId);
+                    modal.style.display = 'block';
+                });
+            }
+
+            for (let i = 0; i < closeBtns.length; i++) {
+                closeBtns[i].addEventListener('click', function () {
+                    const modal = this.parentElement.parentElement;
+                    modal.style.display = 'none';
+                });
+            }
+
+            window.addEventListener('click', function (event) {
+                for (let i = 0; i < modals.length; i++) {
+                    if (event.target == modals[i]) {
+                        modals[i].style.display = 'none';
+                    }
+                }
+            });
+
+        </script>
         <script>
             // For Modal #01
             var index01 = 0;
@@ -1221,7 +1216,7 @@
                         </div>
 
                     </div>
-                    
+
                     <div class="testimonial-box">
                         <!-- <i class="flaticon-right-quote"></i> -->
                         <div class="client-pic">
@@ -1234,7 +1229,8 @@
                             </div>
                             <div class="description" style="text-align: justify;">
                                 <p>During my first industrial experience, I had the opportunity to intern as a Game
-                                    Developer at Ahura Technosoft LLP-Ahmedabad. Throughout my time there, I gained a wealth of
+                                    Developer at Ahura Technosoft LLP-Ahmedabad. Throughout my time there, I gained a
+                                    wealth of
                                     knowledge about the game development field, including how everything works in this
                                     industry.</p>
                             </div>
