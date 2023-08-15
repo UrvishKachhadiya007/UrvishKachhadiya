@@ -449,9 +449,18 @@
                                     </div>
                                 </li> -->
                             <li>
+                                <div class="timeline-content wow fadeInRight" data-wow-duration=".8s"
+                                    data-wow-offset="100">
+                                    <span class="date">May 2023 - Currently</span>
+                                    <h4>Internship - Game Development</h4>
+                                    <p>I did an Internship in Digitalrooar - Ahmedabad as a Game programmer &
+                                        Game designer</p>
+                                </div>
+                            </li>
+                            <li>
                                 <div class="timeline-content wow fadeInLeft" data-wow-duration=".8s"
                                     data-wow-offset="100">
-                                    <span class="date">May 2022 - Aug 2022</span>
+                                    <span class="date" style="margin-left: -30px;">May 2022 - Aug 2022</span>
                                     <h4>Internship - Game Development</h4>
                                     <p>I did an Internship in Ahura Technosoft LLP - Ahmedabad as a Game programmer &
                                         Game designer</p>
@@ -622,6 +631,18 @@
                                 <a href="#modal-7" class="icon-img open-modal-link" style="cursor: pointer;">Explore</a>
                                 <div class="item-category">
                                     <span>UI/UX Design!</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 filtr-item" data-category="1" data-sort="value">
+                        <div class="item">
+                            <img class="img-fluid" src="Cricket/Cricket03.png" alt="">
+                            <div class="overlay">
+                                <h4 class="item-title" style="font-size: 20px; font-weight: bold;">Cricket</h4>
+                                <a href="#modal-8" class="icon-img open-modal-link" style="cursor: pointer;">Explore</a>
+                                <div class="item-category">
+                                    <span>Game Development</span>
                                 </div>
                             </div>
                         </div>
@@ -976,6 +997,48 @@
                 </div>
             </div>
         </div>
+        <div id="modal-8" class="modal">
+            <div class="pop-container">
+                <a  class="close" style="z-index: 1000; color: white; padding-right: 10px; padding-top: 5px;">&times;</a>
+                <div class="wrapper">
+                    <div class="slide">
+                        <div class="slide-img slidingimg08">
+                            <img src="Cricket/Cricket01.png" alt="">
+                        </div>
+                        <div class="slide-img slidingimg08">
+                            <img src="Cricket/Cricket02.png" alt="">
+                        </div>
+                        <div class="slide-img slidingimg08">
+                            <img src="Cricket/Cricket03.png" alt="">
+                        </div>
+                        <div class="slide-img slidingimg08">
+                            <img src="Cricket/Cricket04.png" alt="">
+                        </div>
+                        <div class="slide-img slidingimg08">
+                            <img src="Cricket/Cricket05.png" alt="">
+                        </div>
+                        
+                        <div class="slide-content">
+                            <h2>Cricket</h2>
+                            <li style="color: white; list-style: none; font-size: 11px;">May 2023 - Present
+                            </li>
+                            <p style="text-align: justify;">Score big in 6 balls as a batsman, then strategize as a bowler in the next 6. Win by tallying the most runs overall.
+                            </p>
+                            <li style="color: white; list-style: none;"><b>Technology : </b>Unity,C#, NetcodeForGameobject</li>
+                            <li style="color: white; list-style: none;"><b>Platform : </b>Android</li>
+                            <li style="color: white; list-style: none;"><b>Role : </b>Game Designer & Programmer
+                            </li>
+                            <p></p>
+                            <p style="text-align: justify;">This game is currently in development.
+                            </p>
+                            <!-- <a target="_blank"
+                                href="https://www.figma.com/file/hXXtocoFbuKf8pfLD9QP1Y/GMTK2022-Gamejam?node-id=0%3A1&t=VrxbJnnGAMJS7E1D-1">Explore
+                                in figma</a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- <div id="modal-8" class="modal">
             <div class="pop-container">
                 <a  class="close" style="z-index: 1000; color: white; padding-right: 10px; padding-top: 5px;">&times;</a>
@@ -1224,6 +1287,30 @@
                 setTimeout(changeSlide07, 2000);
             }
             changeSlide07();
+            // For Modal #08
+            var index08 = 0;
+            var slides08 = document.querySelectorAll(".slidingimg08");
+            function changeSlide08() {
+
+                if (index08 < 0) {
+                    index08 = slides08.length - 1;
+                }
+
+                if (index08 > slides08.length - 1) {
+                    index08 = 0;
+                }
+
+                for (let i = 0; i < slides08.length; i++) {
+                    slides08[i].style.display = "none";
+                }
+
+                slides08[index08].style.display = "block";
+
+                index08++;
+
+                setTimeout(changeSlide08, 2000);
+            }
+            changeSlide08();
 
 
         </script>
