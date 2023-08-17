@@ -674,7 +674,7 @@ h6 {
 .demo3 .home img {
     width: 200px;
     height: 200px;
-    border: 8px solid rgb(75, 76, 76, .12);
+    border: 8px solid rgb(75, 76, 76, .3);
     border-radius: 50%;
 }
 
