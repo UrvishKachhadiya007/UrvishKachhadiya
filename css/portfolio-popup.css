@@ -179,12 +179,13 @@ a {
     display: inline-block;
     margin-top: 0px;
     position: relative;
+    background: none;
 }
 
 .slide-content a:before {
     content: "";
     height: 0%;
-    background-color: #fff;
+    background-color: none;
     width: 100%;
     position: absolute;
     top: 0;
@@ -201,6 +202,7 @@ a {
 .slide-content a.active:before {
     content: "";
     height: 100%;
+    background: none;
 }
 
 .slide-content .button {
@@ -212,6 +214,7 @@ a {
     -ms-transition: all 0.4s;
     -moz-transition: all 0.4s;
     -webkit-transition: all 0.4s;
+    background-color: none;
 }
 
 .slide-content .button .inactive i {
@@ -279,7 +282,7 @@ a {
     .slide-content {
         width: 100%;
         padding: 2em 2em;
-        background-color: #fff;
+        
     }
 
     .slide-content .button {

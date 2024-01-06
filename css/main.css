@@ -1401,8 +1401,10 @@ h6 {
 .testimonials .testimonial-box .client-pic {
     display: inline-block;
     width: 80%;
-    margin-right: 50px;
+    /* margin-right: 50px; */
 }
+
+
 
 .testimonials .testimonial-box .client-pic img {
     width: 100%;
